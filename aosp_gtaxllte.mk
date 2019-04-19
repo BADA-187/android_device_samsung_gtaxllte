@@ -21,8 +21,9 @@ $(call inherit-product, device/samsung/gtaxllte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common CM stuff.
+# Inherit some common aex stuff.
 $(call inherit-product, vendor/aosp/config/telephony.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := aosp_gtaxllte
